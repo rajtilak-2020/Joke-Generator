@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Indie+Flower&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(120deg, #8e44ad, #3498db, #686de0);
+  background-size: 1000% 100%;
+  animation: gradient-animation 10s ease infinite;
+  color: #fff;
+  overflow: hidden;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 90%;
+  width: 600px;
+  text-align: center;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.1);
+  border: 3px solid #9b59b6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 32px;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: #6c3483;
+  transition: color 0.4s ease;
+}
+
+h3:hover {
+  color: #1daee7;
+}
+
+.joke {
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  margin: 20px auto;
+  max-width: 500px;
+  color: #555;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.joke:hover{
+  color: #000000;
+}
+
+.btn {
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(45deg, #9b59b6, #3498db);
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 14px 40px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(180deg, #3498db, #9b59b6);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #ddd;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #000000;
+}
+
+/* Heart animation */
+.heart {
+  color: red;
+  animation: heartbeat 3.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  .joke {
+    font-size: 20px;
+  }
+}
