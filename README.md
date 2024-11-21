@@ -4,7 +4,7 @@
 
 A **Dynamic Joke Generator** with a sleek and interactive user interface, designed to entertain and impress! It fetches random jokes and displays them in a beautiful, animated layout, ensuring an enjoyable user experience.
 
-**🔗 [Check out the live website here!](https://rajtilak-2020.github.io/Attendance-Management-System/index.html)**
+**🔗 [Check out the live website here!](https://rajtilak-2020.github.io/Joke-Generator/)**
 ---
 
 ## Features ✨
